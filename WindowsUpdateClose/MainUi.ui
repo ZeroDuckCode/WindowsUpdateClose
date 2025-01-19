@@ -6,20 +6,30 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>724</width>
-    <height>440</height>
+    <width>631</width>
+    <height>430</height>
    </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
   </property>
   <property name="windowTitle">
    <string>MainUi</string>
   </property>
+  <property name="windowIcon">
+   <iconset resource="MainUi.qrc">
+    <normaloff>:/MainUi/pic/windows.png</normaloff>:/MainUi/pic/windows.png</iconset>
+  </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
     <property name="geometry">
      <rect>
       <x>10</x>
       <y>4</y>
-      <width>702</width>
+      <width>611</width>
       <height>373</height>
      </rect>
     </property>
@@ -28,6 +38,9 @@
       <layout class="QVBoxLayout" name="verticalLayout">
        <item>
         <layout class="QGridLayout" name="gridLayout">
+         <property name="verticalSpacing">
+          <number>10</number>
+         </property>
          <item row="0" column="0">
           <widget class="QLabel" name="label_reg">
            <property name="text">
@@ -40,8 +53,79 @@
          </item>
          <item row="1" column="0">
           <widget class="QPushButton" name="pushButton_Reg">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>52</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>240</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>70</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	background-color: #a2f7ff; /*背景色*/ 
+	color: rgb(162, 247, 255);
+	border-style: outset;
+	border-width: 2px;
+	border-radius:10px; /*边界圆滑*/
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:华文新魏;
+	padding: 10px;
+}
+ 
+QPushButton:hover
+{
+	background-color: #D3D3D3;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+           </property>
            <property name="text">
             <string>注册表修改</string>
+           </property>
+           <property name="icon">
+            <iconset resource="MainUi.qrc">
+             <normaloff>:/MainUi/pic/set.png</normaloff>:/MainUi/pic/set.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
            </property>
           </widget>
          </item>
@@ -79,15 +163,121 @@
          </item>
          <item row="2" column="0">
           <widget class="QPushButton" name="pushButton_ServerOpen">
+           <property name="maximumSize">
+            <size>
+             <width>240</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	background-color: #a2f7ff; /*背景色*/ 
+	color: rgb(162, 247, 255);
+	border-style: outset;
+	border-width: 2px;
+	border-radius:10px; /*边界圆滑*/
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:华文新魏;
+	padding: 10px;
+}
+ 
+QPushButton:hover
+{
+	background-color: #D3D3D3;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+           </property>
            <property name="text">
             <string>系统服务开启</string>
+           </property>
+           <property name="icon">
+            <iconset resource="MainUi.qrc">
+             <normaloff>:/MainUi/pic/open.png</normaloff>:/MainUi/pic/open.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
            </property>
           </widget>
          </item>
          <item row="1" column="0">
           <widget class="QPushButton" name="pushButton_ServerClose">
+           <property name="maximumSize">
+            <size>
+             <width>240</width>
+             <height>40</height>
+            </size>
+           </property>
+           <property name="cursor">
+            <cursorShape>PointingHandCursor</cursorShape>
+           </property>
+           <property name="layoutDirection">
+            <enum>Qt::RightToLeft</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton
+{
+	background-color: #a2f7ff; /*背景色*/ 
+	color: rgb(162, 247, 255);
+	border-style: outset;
+	border-width: 2px;
+	border-radius:10px; /*边界圆滑*/
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:华文新魏;
+	padding: 10px;
+}
+ 
+QPushButton:hover
+{
+	background-color: #D3D3D3;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+           </property>
            <property name="text">
             <string>系统服务关闭</string>
+           </property>
+           <property name="icon">
+            <iconset resource="MainUi.qrc">
+             <normaloff>:/MainUi/pic/-_退出-16.png</normaloff>:/MainUi/pic/-_退出-16.png</iconset>
+           </property>
+           <property name="iconSize">
+            <size>
+             <width>32</width>
+             <height>32</height>
+            </size>
            </property>
           </widget>
          </item>
@@ -137,15 +327,68 @@
            <verstretch>0</verstretch>
           </sizepolicy>
          </property>
+         <property name="maximumSize">
+          <size>
+           <width>240</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="cursor">
+          <cursorShape>PointingHandCursor</cursorShape>
+         </property>
+         <property name="layoutDirection">
+          <enum>Qt::RightToLeft</enum>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton
+{
+	background-color: #a2f7ff; /*背景色*/ 
+	color: rgb(162, 247, 255);
+	border-style: outset;
+	border-width: 2px;
+	border-radius:10px; /*边界圆滑*/
+	border-color: #8B7355;
+	font: bold 14px;
+	min-width:2em;
+	color:black; /*字体颜色*/
+	font-family:华文新魏;
+	padding: 10px;
+}
+ 
+QPushButton:hover
+{
+	background-color: #D3D3D3;
+}
+ 
+QPushButton:pressed
+{
+	background-color: #1E90FF; /*伪状态经过时背景色*/ 
+	border-style: inset;
+}
+QPushButton:!enabled{
+	background-color: rgb(100, 100, 100);
+	border-style: inset;
+}</string>
+         </property>
          <property name="text">
           <string>更新服务状态</string>
+         </property>
+         <property name="icon">
+          <iconset resource="MainUi.qrc">
+           <normaloff>:/MainUi/pic/flash.png</normaloff>:/MainUi/pic/flash.png</iconset>
+         </property>
+         <property name="iconSize">
+          <size>
+           <width>32</width>
+           <height>32</height>
+          </size>
          </property>
         </widget>
        </item>
       </layout>
      </item>
      <item row="1" column="0" colspan="2">
-      <widget class="QLabel" name="label_6">
+      <widget class="QLabel" name="label_auther">
        <property name="text">
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-family:'-apple-system','BlinkMacSystemFont','Segoe UI','Roboto','Ubuntu','Helvetica Neue','Helvetica','Arial','PingFang SC','Hiragino Sans GB','Microsoft YaHei UI','Microsoft YaHei','Source Han Sans CN','sans-serif','Apple Color Emoji','Segoe UI Emoji'; font-size:12pt; color:#05073b;&quot;&gt;作者企鹅群:1026926515 &lt;/span&gt;&lt;a href=&quot;https://github.com/ZeroDuckCode/WindowsUpdateClose&quot;&gt;&lt;span style=&quot; font-size:12pt; text-decoration: underline; color:#0000ff;&quot;&gt;GitHub仓库&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
@@ -159,9 +402,13 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>724</width>
+     <width>631</width>
      <height>22</height>
     </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: #F0F0F0;
+color: black;</string>
    </property>
   </widget>
   <widget class="QToolBar" name="mainToolBar">

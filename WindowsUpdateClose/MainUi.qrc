@@ -1,4 +1,16 @@
 <RCC>
-    <qresource prefix="MainUi">
+    <qresource prefix="/MainUi">
+        <file>pic/-_退出-16.png</file>
+        <file>pic/chigua.png</file>
+        <file>pic/dalian.png</file>
+        <file>pic/flash.png</file>
+        <file>pic/guzhang.png</file>
+        <file>pic/lock.png</file>
+        <file>pic/open.png</file>
+        <file>pic/unlock.png</file>
+        <file>pic/windows.png</file>
+        <file>pic/cry.png</file>
+        <file>pic/set.png</file>
+        <file>pic/about.png</file>
     </qresource>
 </RCC>
