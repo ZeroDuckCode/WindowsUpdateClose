@@ -48,6 +48,7 @@ void MainUi::BnServerClose()
     {
         QMessageBox::information(this, u8"提示", u8"服务关闭失败");
     }
+    UpdateServerStatus();
     return;
 }
 
@@ -61,6 +62,7 @@ void MainUi::BnServerOpen()
     {
         QMessageBox::information(this, u8"提示", u8"服务打开失败");
     }
+    UpdateServerStatus();
     return;
 }
 

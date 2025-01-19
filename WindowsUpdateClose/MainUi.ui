@@ -17,7 +17,7 @@
    </sizepolicy>
   </property>
   <property name="windowTitle">
-   <string>MainUi</string>
+   <string>WindowsUpdateClose</string>
   </property>
   <property name="windowIcon">
    <iconset resource="MainUi.qrc">
@@ -316,6 +316,9 @@ QPushButton:!enabled{
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
+         </property>
+         <property name="margin">
+          <number>2</number>
          </property>
         </widget>
        </item>
